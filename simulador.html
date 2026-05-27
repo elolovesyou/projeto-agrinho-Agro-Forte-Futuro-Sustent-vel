@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Sustentável | Simulador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">Agro<span>Sustentável</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">O Equilíbrio</a></li>
+                    <li><a href="simulador.html" class="active">Simulador Eco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h2>Simulador de Práticas Sustentáveis</h2>
+        <p class="subtitle">Ajuste o tamanho da sua propriedade simulada e ative tecnologias para ver o impacto positivo.</p>
+
+        <div class="simulator-box">
+            <div class="controls">
+                <div class="control-group">
+                    <label for="hectares">Tamanho da Propriedade (em Hectares): <span id="hectares-val">50</span>ha</label>
+                    <input type="range" id="hectares" min="10" max="500" value="50">
+                </div>
+
+                <div class="control-group check-group">
+                    <input type="checkbox" id="tech-irrigacao">
+                    <label for="tech-irrigacao">Implementar Gotejamento Inteligente</label>
+                </div>
+
+                <div class="control-group check-group">
+                    <input type="checkbox" id="tech-solar">
+                    <label for="tech-solar">Utilizar Energia Solar na Fazenda</label>
+                </div>
+            </div>
+
+            <div class="results">
+                <h3>Impacto Estimado Projetado:</h3>
+                <div class="result-item">
+                    <span class="result-label">Água Economizada por Ano:</span>
+                    <span class="result-number" id="resultado-agua">0 Litros</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">CO₂ Evitado por Ano:</span>
+                    <span class="result-number" id="resultado-co2">0 kg</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AgroSustentável. Cultivando um amanhã melhor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
